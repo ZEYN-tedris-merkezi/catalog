@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#75c9a3">
+  <title>ZEYN Kataloq 2026</title>
+  <style>
+    :root {
+      --mint: #82d5ae;
+      --mint-dark: #4e9d7a;
+      --ink: #18231f;
+      --card: rgba(255,255,255,.94);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(160,238,199,.9), transparent 38%),
+        linear-gradient(160deg, #9dddbd 0%, #647a70 52%, #1f2423 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .wrap {
+      width: min(100%, 980px);
+      display: grid;
+      grid-template-columns: minmax(260px, 420px) 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .cover {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.30);
+      display: block;
+    }
+    .panel {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.22);
+      backdrop-filter: blur(10px);
+    }
+    .brand {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      color: var(--mint-dark);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 62px);
+      line-height: .98;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.55;
+      margin: 0 0 26px;
+      color: #3d4c46;
+    }
+    .buttons {
+      display: grid;
+      gap: 12px;
+    }
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 14px;
+      padding: 16px 18px;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    a:hover { transform: translateY(-2px); }
+    .primary {
+      background: var(--mint);
+      color: #10211a;
+    }
+    .secondary {
+      border: 2px solid #bed8cc;
+      color: #263b32;
+      background: white;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #68756f;
+      text-align: center;
+    }
+    @media (max-width: 760px) {
+      body { padding: 16px; }
+      .wrap { grid-template-columns: 1fr; gap: 18px; }
+      .cover { max-width: 440px; margin: auto; }
+      .panel { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="cover" src="cover.png" alt="ZEYN Kataloq 2026 üz qabığı">
+    <section class="panel">
+      <div class="brand">ZEYN Tədris Mərkəzi</div>
+      <h1>Kataloq 2026</h1>
+      <p>Güvən Nəşrləri, Dəyər Yayınları, Meta Book və ZEYN Tədris Mərkəzinin 2026 kataloqu.</p>
+      <div class="buttons">
+        <a class="primary" href="Kataloq-2026.pdf" target="_blank" rel="noopener">Kataloqu aç</a>
+        <a class="secondary" href="Kataloq-2026.pdf" download>PDF-ni yüklə</a>
+      </div>
+      <div class="note">PDF açılmırsa, səhifəni yeniləyin və ya “PDF-ni yüklə” düyməsinə toxunun.</div>
+    </section>
+  </main>
+</body>
+</html>
